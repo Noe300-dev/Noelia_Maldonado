@@ -89,3 +89,15 @@
 # print(f"el total de caracter es {cantcar}")
 # print(f"el total de vocales es {v}")
 # print(f"el total de consonante es {cons}")
+
+# a=int(input())
+# for i in range (1,10001):
+#     print(f"{i}*{a}={i*a}")
+# edad=1
+# while(edad<0 or edad>100):
+#     edad=int(input(""))
+#     if (edad <0 or edad >100):
+#         print ("error, fuera de ranfo")
+# print("ingresado exitosamente")
+# print(edad)
+
