@@ -74,16 +74,16 @@
 # print ("logro la meta")
 
 # 4 ingresar num positivo y hacer operaciones basicas
-num = -1
-while (num < 0):
-    num = int(input("ingrese un numero positivo: "))
-    if (num<0):
-        print("error, ingreso un numero menor a 0, vuelva a intentarlo")
-print("numero ingrersado correctamente")
-num = num*5     
-num = num-8
-num = num+3
-num = num/2
-print(f"el valor resultante es {num}")
+# num = -1
+# while (num < 0):
+#     num = int(input("ingrese un numero positivo: "))
+#     if (num<0):
+#         print("error, ingreso un numero menor a 0, vuelva a intentarlo")
+# print("numero ingrersado correctamente")
+# num = num*5     
+# num = num-8
+# num = num+3
+# num = num/2
+# print(f"el valor resultante es {num}")
 
 # 5 adivine el numero
