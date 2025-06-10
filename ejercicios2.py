@@ -58,34 +58,34 @@
 # 1 entre 3, y la de carbon es de 1 entre 3
 # minar toma 3 segundos
 #  2-. consultar recursos, muestra los recursos  3-. crear espadas, 4-. salir
-import random
-import time 
-d:0
-c:0
-p:0
-while True:
-    r=int(input('''
-               1. minar
-               2. consultar recursos
-               3. crear espadas
-               4. salir
-                '''))
-    match r:
-        case 1: 
-            print("minar")
-            time.sleep(3)
-            d=random.randint(1,7)
-            d+=d
-            p=random.randint(1,3)
-            p+=p
-            c=random.randint(1,3)
-            c+=c
-        case 2: 
-            print("consultar recursos")
-            print(f"el diamante que tiene es {d}")
-            print(f"los palo que tiene son {p}")
-            print(f"el carbón que tiene es {c}")
-        case 3: 
-            print("crear espadas")
-        case 4:
-            print("salir")
+# import random
+# import time 
+# d:0
+# c:0
+# p:0
+# while True:
+#     r=int(input('''
+#                1. minar
+#                2. consultar recursos
+#                3. crear espadas
+#                4. salir
+#                 '''))
+#     match r:
+#         case 1: 
+#             print("minar")
+#             time.sleep(3)
+#             d=random.randint(1,7)
+#             d+=d
+#             p=random.randint(1,3)
+#             p+=p
+#             c=random.randint(1,3)
+#             c+=c
+#         case 2: 
+#             print("consultar recursos")
+#             print(f"el diamante que tiene es {d}")
+#             print(f"los palo que tiene son {p}")
+#             print(f"el carbón que tiene es {c}")
+#         case 3: 
+#             print("crear espadas")
+#         case 4:
+#             print("salir")
