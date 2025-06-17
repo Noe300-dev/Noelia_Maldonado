@@ -1,0 +1,96 @@
+# def suma():
+#     n1=int(input("Ingrese un numero: "))
+#     n2=int(input("Ingrese otro numero: "))
+#     print(n1+n2)
+
+# def suma_arg(n1,n2): #funcion con argumento
+#     print(n1+n2)
+
+# def suma():
+#     n1=int(input("Ingrese un numero: ")) # para que un numero tenga retorno
+#     n2=int(input("Ingrese otro numero: "))
+#     return (n1+n2)
+
+# suma()
+# suma_arg(9,8)
+# nume=(suma_ret())
+# print(nume*5)
+# print(suma_ret_arg(8,9)) #tiene, retorno y argumentos
+
+
+# '''Realiza una funcion que calcula el IVA
+
+# Realiza otra funcion que al pasarle un precio y un numero como porcentaje (ej 20)
+# calcula el descuento y muestra el valor final'''
+
+# def iva(n):
+#     return n*1.19
+    
+
+# def num():
+#     n1=int(input("Ingrese un precio: "))
+#     n2=int(input("Ingrese un descuento: "))
+#     return n1*(n2/100)
+# neto=1500
+# desc=num()
+# total=iva(neto-desc)
+
+
+# # print("El total final de su producto junto con descuento seria, ",total-desc )
+# print("El total final de su producto junto con el IVA seria, ",total )
+
+# '''agregar articulo
+# borrar articulo
+# actualizar el articulo
+# mostrar lista de articulos
+# salir'''
+
+productos=[    
+    {"nombre": "lapiz", "precio": 400}
+    {"nombre": "goma", "precio": 200}
+    {"nombre": "estuche", "precio": 1600}
+    ]
+
+for productos in productos:
+    print("el precio del articulo ", productos ["nombre"], "es", productos)
+
+
+while True:
+     try:
+
+        print('''
+              1- agregar articulo
+              2- borrar articulo
+              3- actualizar aticulo
+              4- mostrar lista de productos
+              5- salir
+              ''')
+        op=int(input("Seleccione una opción"))
+        match op:
+            case 1:
+                nombre=input("ingrese el nombre del articulo")
+                precio=int(input("ingrese el nombre del precio"))
+                productos.append({"nombre":nombre, "precio":precio})
+            case 2:
+                for n,productos in enumerate(productos):
+                    print(n+1, productos["nombre"], productos ["precio"])
+                borrar=int(input("seleccione el producto a borrar"))
+                productos.pop(borrar-1)
+            case 3:
+                for n,productos in enumerate(productos):
+                    print(n+1, productos ["nombre"],productos ["precio"])
+                act=int(input("seleccione cual desea actualizar"))
+                nombre=int(input("ingrese el nombre del articulo"))
+                precio=int(input("ingrese el nombre del precio"))
+                productos[act-1]["nombre"]=nombre
+                productos[act-1]["precio"]=precio
+            case 4:
+                for n,productos in enumerate(productos):
+                    print(n+1, productos["nombre"], productos["precio"])
+            case 5: 
+                break
+            case _:
+                print("opción invalida")
+
+     except Exception as Error:
+        print("El error es", Error)
