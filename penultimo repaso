@@ -45,52 +45,52 @@
 # mostrar lista de articulos
 # salir'''
 
-productos=[    
-    {"nombre": "lapiz", "precio": 400}
-    {"nombre": "goma", "precio": 200}
-    {"nombre": "estuche", "precio": 1600}
-    ]
+# productos={    
+#     {"nombre": "lapiz", "precio": 400}
+#     {"nombre": "goma", "precio": 200}
+#     {"nombre": "estuche", "precio": 1600}
+# }
 
-for productos in productos:
-    print("el precio del articulo ", productos ["nombre"], "es", productos)
+# for productos in productos:
+#     print("el precio del articulo ", productos ["nombre"], "es", productos)
 
 
-while True:
-     try:
+# while True:
+#      try:
 
-        print('''
-              1- agregar articulo
-              2- borrar articulo
-              3- actualizar aticulo
-              4- mostrar lista de productos
-              5- salir
-              ''')
-        op=int(input("Seleccione una opción"))
-        match op:
-            case 1:
-                nombre=input("ingrese el nombre del articulo")
-                precio=int(input("ingrese el nombre del precio"))
-                productos.append({"nombre":nombre, "precio":precio})
-            case 2:
-                for n,productos in enumerate(productos):
-                    print(n+1, productos["nombre"], productos ["precio"])
-                borrar=int(input("seleccione el producto a borrar"))
-                productos.pop(borrar-1)
-            case 3:
-                for n,productos in enumerate(productos):
-                    print(n+1, productos ["nombre"],productos ["precio"])
-                act=int(input("seleccione cual desea actualizar"))
-                nombre=int(input("ingrese el nombre del articulo"))
-                precio=int(input("ingrese el nombre del precio"))
-                productos[act-1]["nombre"]=nombre
-                productos[act-1]["precio"]=precio
-            case 4:
-                for n,productos in enumerate(productos):
-                    print(n+1, productos["nombre"], productos["precio"])
-            case 5: 
-                break
-            case _:
-                print("opción invalida")
+#         print('''
+#               1- agregar articulo
+#               2- borrar articulo
+#               3- actualizar aticulo
+#               4- mostrar lista de productos
+#               5- salir
+#               ''')
+#         op=int(input("Seleccione una opción"))
+#         match op:
+#             case 1:
+#                 nombre=input("ingrese el nombre del articulo")
+#                 precio=int(input("ingrese el nombre del precio"))
+#                 productos.append({"nombre":nombre, "precio":precio})
+#             case 2:
+#                 for n,productos in enumerate(productos):
+#                     print(n+1, productos["nombre"], productos ["precio"])
+#                 borrar=int(input("seleccione el producto a borrar"))
+#                 productos.pop(borrar-1)
+#             case 3:
+#                 for n,productos in enumerate(productos):
+#                     print(n+1, productos ["nombre"],productos ["precio"])
+#                 act=int(input("seleccione cual desea actualizar"))
+#                 nombre=int(input("ingrese el nombre del articulo"))
+#                 precio=int(input("ingrese el nombre del precio"))
+#                 productos[act-1]["nombre"]=nombre
+#                 productos[act-1]["precio"]=precio
+#             case 4:
+#                 for n,productos in enumerate(productos):
+#                     print(n+1, productos["nombre"], productos["precio"])
+#             case 5: 
+#                 break
+#             case _:
+#                 print("opción invalida")
 
-     except Exception as Error:
-        print("El error es", Error)
+#      except Exception as Error:
+#         print("El error es", Error)
